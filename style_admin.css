@@ -1,0 +1,128 @@
+BODY {
+    margin:0px;
+}
+
+/* стиль формы логина */
+#login_container {
+    width:278px;
+    height:150px;
+    margin-top:200px;
+    margin-right:auto;
+    margin-left:auto;
+    padding:10px;
+    background:#6699CC;
+    -moz-box-shadow: 0 0 15px rgba(0,0,0,0.5); /* Для Firefox */
+    -webkit-box-shadow: 0 0 15px rgba(0,0,0,0.5); /* Для Safari и Chrome */
+    box-shadow: 0 0 15px rgba(0,0,0,0.5); /* Параметры тени */
+}
+
+#login_text {
+    margin:0 0 15px 10px;;
+    font-size:16px;
+    font-style:italic;
+    color:#DEE1FF;
+    color:#DEE1FF;
+}
+.text {
+    width:30px;
+    float:left;
+    color:#3e3e3e;
+}
+.input {
+    margin:0 0 15px 40px;
+    width:200px;
+    float:left;
+}
+#login_ok {
+    width:278px;
+    margin: 0 10px 0 0;
+    text-align:right;
+}
+/* конец стиля формы логина */
+
+
+/* стиль панели администрирования */
+#container {
+    width:1000px;
+    margin-right:auto;
+    margin-left:auto;
+    -moz-box-shadow: 0 0 15px rgba(0,0,0,0.5); /* Для Firefox */
+    -webkit-box-shadow: 0 0 15px rgba(0,0,0,0.5); /* Для Safari и Chrome */
+    box-shadow: 0 0 15px rgba(0,0,0,0.5); /* Параметры тени */
+}
+
+#header {
+    background: #cccccc;
+    padding:0px;
+    width: 100%;
+    height:100px;
+}
+
+#logo {
+    float:left;
+}
+
+#menu {
+    height:20px;
+    padding:5px;
+    background:#0094de;
+}
+
+#content {
+    min-height:900px;
+    max-height:100%;
+    top:100px;
+}
+
+#left {
+    padding:10px;
+    width:230px;
+    height:100%;
+    float:left;
+}
+
+#right {
+    padding: 0 10px 50px 10px;
+    margin-left:250px;
+    min-height:900px;
+    height:100%;
+    background: #fff;
+    border-left: 2px solid #ccc;
+}
+
+#footer {
+    bottom:0px;
+    position:fixed;
+    padding:10px;
+    height:30px;
+    width:980px;
+    background: #4477aa;
+    -moz-box-shadow: 0 0 15px rgba(0,0,0,0.5); /* Для Firefox */
+    -webkit-box-shadow: 0 0 15px rgba(0,0,0,0.5); /* Для Safari и Chrome */
+    box-shadow: 0 0 15px rgba(0,0,0,0.5); /* Параметры тени */
+}
+
+h1 {
+    font-size:48px;
+    font-weight:bold;
+    margin:0px;
+    padding-left:205px;
+    padding-top:15px;
+    color:#6666BB;
+}
+
+h2 {
+    font-size:24px;
+    font-weight:bold;
+    margin:5px;
+    color:#6699CC;
+}
+
+ul.menu {
+    margin:0px;
+}
+
+ul.menu li {
+    display:inline;
+    padding-right: 10px;
+}
