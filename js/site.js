@@ -1,7 +1,7 @@
 $(document).ready(function() {
 
-    $('.vid_animal').click(function(){
-        var get = $(this).href.val();
-        $("#right").load(get, )
-    })
+	$('.vid_id').live('click', function(event){
+		var vid_id = $(this).attr('id');
+		$("#right").load('animal_ajax.php', {vid_id: vid_id})
+		})
 });

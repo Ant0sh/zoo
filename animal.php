@@ -15,9 +15,9 @@ $sql = "SELECT DISTINCT `vid`.`id`, `vid`
             ORDER BY `vid`";
 $result = mysql_query($sql);
 while($row = mysql_fetch_assoc($result)) {
-    $animals[$row['id']] = $row['vid'];
+    $vids[$row['id']] = $row['vid'];
 }
 
-$smarty->assign('animals', $animals);
+$smarty->assign('vids', $vids);
 $smarty->display('animal.tpl');
 $smarty->display('footer.tpl');

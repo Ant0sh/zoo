@@ -86,3 +86,32 @@ ul.menu li {
     display:inline;
     padding-right: 10px;
 }
+
+ul#vid {
+    padding:0;
+    margin: 5px 0 0 5px;
+}
+ul#vid li {
+    display:block;
+    color:#6666BB;
+}
+
+table {
+    margin:10px 0 0;
+    border-spacing:0px 1px;
+}
+table thead td {
+    padding:0px;
+    margin:0px;
+    border: solid #0094de;
+    border-width: 2px 1px;
+    font-weight:bold;
+    width:200px;
+}
+table td{
+    padding:0px;
+    margin:0px;
+    border: solid #0094de;
+    border-width: 1px;
+
+}
