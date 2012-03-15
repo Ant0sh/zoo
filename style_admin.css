@@ -4,7 +4,7 @@ BODY {
 
 /* стиль формы логина */
 #login_container {
-    width:278px;
+    width:290px;
     height:150px;
     margin-top:200px;
     margin-right:auto;
@@ -15,28 +15,62 @@ BODY {
     -webkit-box-shadow: 0 0 15px rgba(0,0,0,0.5); /* Для Safari и Chrome */
     box-shadow: 0 0 15px rgba(0,0,0,0.5); /* Параметры тени */
 }
-
 #login_text {
-    margin:0 0 15px 10px;;
-    font-size:16px;
-    font-style:italic;
-    color:#DEE1FF;
-    color:#DEE1FF;
+     margin:0 0 10px 10px;
+     font-size:16px;
+     font-style:italic;
+     color:#DEE1FF;
+     color:#DEE1FF;
+}
+
+#form {
+    width:290px;
+    height:50px;
+    margin:0px 0px;
 }
 .text {
-    width:30px;
+    width:54px;
     float:left;
     color:#3e3e3e;
 }
 .input {
-    margin:0 0 15px 40px;
-    width:200px;
+    margin:0 0 10px 10px;
+    width:220px;
     float:left;
 }
-#login_ok {
-    width:278px;
-    margin: 0 10px 0 0;
-    text-align:right;
+
+#ok_bt {
+    margin:0 0 0 153px;
+    padding:2px 10px;
+    width:44px;
+    background:#eee;
+    float:left;
+    border:solid 1px #666;
+    cursor:default;
+
+}
+#ok_bt:hover {
+    background:#ccc;
+}
+
+#cancel_bt {
+    margin:0 0 0 5px;
+    padding:2px 5px;
+    width:54px;
+    background:#eee;
+    border:solid 1px #666;
+    cursor:default;
+    float:left;
+}
+#cancel_bt:hover {
+    background:#ccc;
+}
+#status {
+    margin:40px 0 0;
+    width:290px;
+    height:20px;
+    font-size:13px;
+    color:#800;
 }
 /* конец стиля формы логина */
 

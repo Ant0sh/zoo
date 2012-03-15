@@ -4,16 +4,19 @@
 <head>
 	<title>{$title}</title>
 	<link rel="stylesheet" type="text/css" href="style_admin.css">
+	<script type="text/javascript" src="js/jquery-1.7.1.js"></script>
+	<script type="text/javascript" src="js/admin_login.js"></script>
 </head>
 <body>
 <div id="login_container">
 	<div id="login_text">Вход в административную панель управления зоопарком</div>
-	<form method="post" action="admin_panel.php">
+	<div id="form">
 		<div class="text">Логин:</div><input class="input" type="text" name="login" size="20" />
 		<div class="text">Пароль:</div><input class="input" type="password" name="password" size="20" />
-		<div id="login_ok"><input type="submit" title="Войти" value="Войти">
-		<input type="submit" title="Отмена" value="Отмена" onclick="index.php"></div>
-	</form>
+	</div>
+	<div id="ok_bt">Войти</div>
+	<div id="cancel_bt">Отмена</div>
+	<div id="status"></div>
 </div>
 </body>
 </html>

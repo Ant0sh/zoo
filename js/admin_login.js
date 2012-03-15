@@ -1,7 +1,19 @@
-/**
- * Created with JetBrains PhpStorm.
- * User: User
- * Date: 13.03.12
- * Time: 4:22
- * To change this template use File | Settings | File Templates.
- */
+$(document).ready(function() {
+	$('#cancel_bt').live('click', function(event){
+		document.location.href="index.php"
+	});
+
+	$('#ok_bt').live('click', function(event){
+		var login = $(':input:first').val();
+		var password = $(':input:last').val();
+		$.post('admin_login_ajax.php', {login: login, password: password},
+			function(data){
+				if(data == 1){
+					document.location.href="admin_panel.php";
+				}
+				else{
+					$('#status').text('Неверный логин или пароль!').fadeOut(3000);
+				}
+			});
+		});
+});

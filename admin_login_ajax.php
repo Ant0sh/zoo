@@ -6,8 +6,8 @@ $smarty = new Smarty;
 $smarty->templates_dir = 'templates';
 $smarty->templates_c = 'templates_c';
 
-if(!isset($_POST['vid_id'])){
-	$smarty->assign('notVid', 'Не выбран вид животного.');
+if(!isset($_POST['login']) && !isset($_POST['password'])){
+	$smarty->assign('status', 0);
 }
 else{
 	$vidId = $_POST['vid_id'];
@@ -25,12 +25,12 @@ else{
 				ORDER BY `a`.`name`";
 	$result = mysql_query($sql);
 	while($row = mysql_fetch_assoc($result)){
-	    $animals[$row['id']]=array('name' => $row['name'],
-								'description_animal' => $row['description_animal'],
-								'age' => $row['age'],
-								'color' => $row['color'],
-								'birthday' => $row['birthday'],
-								'date_enter' => $row['date_enter']);
+		$animals[$row['id']]=array('name' => $row['name'],
+			'description_animal' => $row['description_animal'],
+			'age' => $row['age'],
+			'color' => $row['color'],
+			'birthday' => $row['birthday'],
+			'date_enter' => $row['date_enter']);
 	}
 	$smarty->assign('animals', $animals);
 }
