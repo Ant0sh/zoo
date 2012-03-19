@@ -3,11 +3,14 @@
 	<div id='left'>
 		<p>Виды животных:</p>
 		<ul id="vid">
-			{foreach from=$vids key=k item=val}
-				<li class="vid_id" id="{$k}">{$val}</li>
-			{foreachelse}
-				<li>Животных нет.</li>
-			{/foreach}
+			{if is_array($vids)}
+				{foreach from=$vids key=k item=val}
+					<li class="vid_id" id="{$k}">{$val}</li>
+				{/foreach}
+			{else}
+				<li>Видов животных нет.</li>
+			{/if}
+
 		</ul>
 	</div>
 	<div id='right'></div>

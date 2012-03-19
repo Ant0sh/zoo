@@ -12,7 +12,7 @@ $(document).ready(function() {
 					document.location.href="admin_panel.php";
 				}
 				else{
-					$('#status').text('Неверный логин или пароль!').fadeOut(3000);
+					$('#status').text('Неверный логин или пароль!');
 				}
 			});
 		});

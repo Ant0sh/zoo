@@ -91,10 +91,14 @@ ul#vid {
     padding:0;
     margin: 5px 0 0 5px;
 }
-ul#vid li {
+ul#vid li.vid_id {
     display:block;
     color:#6666BB;
 }
+ul#vid li {
+    display:block;
+}
+
 
 table {
     margin:10px 0 0;

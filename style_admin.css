@@ -70,7 +70,6 @@ BODY {
     width:290px;
     height:20px;
     font-size:13px;
-    color:#800;
 }
 /* конец стиля формы логина */
 
@@ -96,10 +95,22 @@ BODY {
     float:left;
 }
 
-#menu {
+ul {
+    margin:0;
+    padding:0;
+    border:solid #4477aa;
+    border-width:1px 0 0;
+    cursor:default;
+}
+ul li.action {
+    display:block;
     height:20px;
     padding:5px;
-    background:#0094de;
+    border:solid #4477aa;
+    border-width:0 0 1px 0;
+}
+ul li.action:hover {
+    color:#0094de;
 }
 
 #content {
@@ -152,11 +163,87 @@ h2 {
     color:#6699CC;
 }
 
-ul.menu {
+table.info {
+    margin:10px 0 0;
+    border-spacing:0px 1px;
+}
+table.info thead td {
+    padding:0px;
     margin:0px;
+    border: solid #0094de;
+    border-width: 2px 1px;
+    font-weight:bold;
+    font-size:15px;
+    width:200px;
+    text-align:center;
+}
+table.info td{
+    padding:0px;
+    margin:0px;
+    font-size:13px;
+}
+input
+{
+    color:#222;
+    background-color:#fff;
+    border:solid 1px #ccc;
+}
+input[disabled="disabled"]
+{
+    color:#222;
+    background-color:#fff;
+    border:solid 1px #ccc;
+}
+table.info tbody td.edit {
+    width:30px;
+    height:20px;
+    background-repeat:no-repeat;
+    background-image:url("img/edit_.png");
+}
+table.info tbody td.edit:hover {
+    background-image:url("img/edit.png");
+}
+table.info tbody td.save {
+    width:30px;
+    height:20px;
+    background-repeat:no-repeat;
+    background-image:url("img/alert.png");
+}
+table.info tbody td.save:hover {
+    background-image:url("img/ok.png");
+}
+table.info tbody td.del {
+    width:20px;
+    height:20px;
+    background-image:url("img/del_.png");
+    background-repeat:no-repeat;
+}
+table.info tbody td.del:hover {
+    background-image:url("img/del.png");
 }
 
-ul.menu li {
-    display:inline;
-    padding-right: 10px;
+table#add_info {
+    margin:10px 0 0;
+    border-spacing:0px 1px;
+}
+table#add_info thead td {
+    padding:0px;
+    margin:0px;
+    font-weight:bold;
+    width:200px;
+    text-align:center;
+}
+table#add_info td{
+    padding:0px 2px 0 0;
+    margin:0px;
+}
+table tbody tr td input {
+    width:97%;
+}
+
+table tbody tr td textarea {
+    width:500px;
+}
+
+#add {
 }
